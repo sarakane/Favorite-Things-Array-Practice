@@ -8,5 +8,10 @@ $("document").ready(function() {
     const adjustedFavThings = [];
     adjustedFavThings.push(favThings[1], favThings[0], favThings[2]);
     console.log("Adjusted Favorite Things Array: " + adjustedFavThings);
+
+    adjustedFavThings.forEach(function(thingILike) {
+      $("ul").append("<li>"+thingILike+"</li>");
+    });
+    
   });
 });
